@@ -4,41 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Campus Connect</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
         <h1>Campus Connect</h1>
         <p>Your campus, connected.</p>
     </header>
 
     <main>
+
         <section class="welcome">
             <h2>Welcome to Campus Connect</h2>
-            <p>A central place to access campus and academic information.</p>
+            <p>
+                A central place to access campus and academic information.
+            </p>
         </section>
 
         <section class="roles">
             <h2>Choose Your Role</h2>
 
             <div class="role-container">
-                <article class="role-card">
+
+                <button class="role-card" data-role="Admin" type="button">
                     <h3>Admin</h3>
                     <p>Manage students, educators and courses.</p>
-                </article>
+                </button>
 
-                <article class="role-card">
+                <button class="role-card" data-role="Educator" type="button">
                     <h3>Educator</h3>
                     <p>Manage attendance and academic records.</p>
-                </article>
+                </button>
 
-                <article class="role-card">
+                <button class="role-card" data-role="Student" type="button">
                     <h3>Student</h3>
                     <p>View your courses, attendance and marks.</p>
-                </article>
+                </button>
+
             </div>
+
+            <p id="role-message" aria-live="polite">
+                Select a role to continue.
+            </p>
+
         </section>
+
     </main>
 
     <footer>
@@ -46,5 +61,6 @@
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
