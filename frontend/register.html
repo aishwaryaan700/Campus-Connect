@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | Campus Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Campus Connect</h1>
+        <p>Student Registration</p>
+    </header>
+
+    <main>
+        <section class="registration">
+            <h2>Register a Student</h2>
+            <p>Enter the student's academic details below.</p>
+
+            <form id="registration-form">
+                <label for="student-id">Student ID</label>
+                <input
+                    type="text"
+                    id="student-id"
+                    name="studentId"
+                    required
+                >
+
+                <label for="student-name">Full Name</label>
+                <input
+                    type="text"
+                    id="student-name"
+                    name="studentName"
+                    required
+                >
+
+                <label for="student-email">Email Address</label>
+                <input
+                    type="email"
+                    id="student-email"
+                    name="studentEmail"
+                    required
+                >
+
+                <label for="student-course">Course</label>
+                <select id="student-course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Science">Information Science</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                </select>
+
+                <button type="submit">Register Student</button>
+            </form>
+
+            <p id="registration-message" aria-live="polite"></p>
+
+            <a href="index.html">Back to Home</a>
+        </section>
+    </main>
+
+    <script src="register.js"></script>
+</body>
+</html>
